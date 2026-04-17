@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vidisoft | Victor Alejandro - Software Architect</title>
+    <style>
+        :root {
+            --primary: #1a2a3a;
+            --accent: #2980b9;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        .container { 
+            max-width: 850px; 
+            margin: 40px auto; 
+            padding: 40px; 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08); 
+        }
+        header { text-align: center; border-bottom: 2px solid #f0f0f0; padding-bottom: 30px; }
+        h1 { color: var(--primary); margin-bottom: 5px; font-size: 2.8em; letter-spacing: -1px; }
+        .tagline { color: var(--accent); font-weight: 600; font-size: 1.3em; margin-top: 0; }
+        
+        .section { margin-top: 40px; }
+        h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); font-size: 1.6em; margin-bottom: 20px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .skill-list { list-style: none; padding: 0; }
+        .skill-list li { margin-bottom: 8px; }
+        .skill-list li::before { content: "▹ "; color: var(--accent); font-weight: bold; }
+        
+        .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .project-card { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            padding: 15px; 
+            border-radius: 8px; 
+            transition: transform 0.2s;
+        }
+        .project-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .project-card strong { color: var(--primary); display: block; margin-bottom: 5px; }
+        .project-card span { font-size: 0.85em; color: #666; }
+
+        .freelance-box { 
+            background: #f0f7ff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            border-left: 5px solid var(--accent);
+            margin-top: 20px;
+        }
+        
+        footer { 
+            margin-top: 50px; 
+            text-align: center; 
+            font-size: 0.95em; 
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+        .faith { font-style: italic; color: #7f8c8d; margin-top: 15px; }
+
+        @media (max-width: 600px) {
+            .grid, .project-grid { grid-template-columns: 1fr; }
+            .container { margin: 10px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>vidisoft</h1>
+        <p class="tagline">Software Architect & AI Solutions Specialist</p>
+        <p>Victor Alejandro Caicedo Rodriguez | Cali, Colombia</p>
+    </header>
+
+    <div class="section">
+        <h2>Perfil Profesional</h2>
+        <p>Arquitecto de software con más de 15 años de trayectoria en el diseño y despliegue de ecosistemas digitales escalables. Experto en infraestructuras críticas, gestión de servidores Linux y bases de datos de alto volumen. Actualmente liderando la evolución hacia el <strong>AI-Driven Development</strong> y la orquestación de agentes inteligentes.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia y Proyectos Destacados</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <strong>AgendateApp (Co-propietario)</strong>
+                <span>Arquitectura completa de backend, bases de datos y gestión de servidores para la plataforma.</span>
+            </div>
+            <div class="project-card">
+                <strong>EvaluateOK / EvaluateOK Estudiantes</strong>
+                <span>Liderazgo técnico en el desarrollo y mantenimiento del ecosistema de evaluación académica.</span>
+            </div>
+            <div class="project-card">
+                <strong>AulaParaTodos</strong>
+                <span>Implementación de plataforma educativa.</span>
+            </div>
+            <div class="project-card">
+                <strong>MiTaxiSeguro</strong>
+                <span>Arquitectura y desarrollo de la plataforma web y servicios de movilidad segura.</span>
+            </div>
+            <div class="project-card">
+                <strong>ScareCusum</strong>
+                <span>Implementación de soluciones técnicas especializadas para análisis de datos.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="section">
+            <h2>Tecnologías Core</h2>
+            <ul class="skill-list">
+                <li>Java, Node.js & Python</li>
+                <li>Flutter (Mobile)</li>
+                <li>PostgreSQL & MongoDB</li>
+                <li>Linux Server Administration</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Nuevas Fronteras</h2>
+            <ul class="skill-list">
+                <li>AI-Driven Architectures</li>
+                <li>Agentes Autónomos</li>
+                <li>Automatización con LLMs</li>
+                <li>Microservicios Cloud</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Servicios Freelance</h2>
+        <div class="freelance-box">
+            Consultoría técnica senior para startups y empresas. Especialista en <strong>desarrollos a la medida</strong> que requieren arquitecturas robustas, seguras y preparadas para el crecimiento exponencial.
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Contacto:</strong> vidisoft.main@gmail.com</p>
+        <p class="faith">"Todo lo puedo en Cristo que me fortalece" — Seguidor de Jesucristo</p>
+        <p>&copy; <span id="current-year"></span> vidisoft. Soluciones de Software de Alto Impacto.</p>
+    </footer>
+</div>
+
+  <script>
+    // Actualiza el año automáticamente
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
